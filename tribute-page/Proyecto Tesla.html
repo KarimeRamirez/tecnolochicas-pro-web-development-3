@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2? family=Benne&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+
+    <title>Nikola Tesla </title>
+    <style>
+        html, body {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            background: #EFD4FE;
+            color: #3a3a3a;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+ }
+
+        #navigation-bar ul {
+            margin: 0;
+            padding: 0;
+            border: 1px solid #e7e7e7;
+            background-color: #D591AE;
+        }
+
+        #navigation-bar li {
+            display: inline-block;
+        }
+
+        #navigation-bar li a {
+            display: block;
+            color: #665;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #navigation-bar li a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        #navigation-bar li a.active {
+            color: #fff;
+            background-color: #665;
+        }
+
+        #navigation-bar .menu__hamburger-icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            #navigation-bar li:not(:first-child) {
+                display: none;
+            }
+            #navigation-bar li.menu__hamburger-icon {
+                display: block;
+                float: right;
+            }
+            #navigation-bar.responsive {
+                position: relative;
+            }
+            #navigation-bar.responsive .menu__hamburger-icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            #navigation-bar.responsive .menu__hamburger-icon a {
+                color: #fff;
+            }
+            #navigation-bar.responsive li {
+                float: none;
+                display: block !important;
+            }
+            #navigation-bar.responsive li a{
+                text-align: left;
+       }
+        }
+
+        #main-content-container {
+            display: flex;
+        }
+
+        #links-sidebar {
+            flex: 2;
+            background: #EFD4FE
+        }
+
+        #main-content {
+            flex: 6;
+            padding: 10px 20% 10px 10px;
+        }
+
+        .main-content__img--full-width {
+            width: 100%;
+        }
+
+        #footer {
+            padding: 0 20px 20px 20px;
+            margin-top: auto;
+            display: flex;
+            background: #f3f3f3;
+        }
+
+        .footer__section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .social__networks {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .social__network {
+            display: flex;
+            align-items: center;
+        }
+
+        .social__icon {
+            font-size: 32px;
+        }
+
+        .social__icon-handler {
+            margin-left: 10px;
+        }
+
+        input[type=email], textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 3px solid #ccc;
+            transition: 0.5s;
+            outline: none;
+        }
+
+        input[type=email]:focus, textarea:focus {
+            border: 3px solid #555;
+        }
+
+        input[type=submit] {
+            background: #EFD4FE;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+</style>
+<script>
+        function myFunction() {
+            const navigationBar = document.getElementById("navigation-bar");
+            if (navigationBar.className === "navigation-bar") {
+                navigationBar.className += " responsive";
+            } else {
+                navigationBar.className = "navigation-bar";
+            }
+        }
+    </script>
+
+</head>
+<body>
+<header id="header">
+    <em><h1> NIKOLA TESLA. </h1></em>
+ 
+    <em><p>1856- 1943</p></em>
+</header>
+
+<nav id="navigation-bar" class="navigation-bar">
+    <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="#">Descubrimientos</a></li>
+        <li><a href="#">Inventos</a></li>
+<li><a href="#">Reconocimientos</a></li>
+        <li class="menu__hamburger-icon">
+            <a  href="javascript:void(0);" onclick="myFunction()">
+                <i class="lni lni-menu"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+
+
+<div id="main-content-container">
+    <aside id="links-sidebar"><br>
+    <center><strong> <em>   Links relacionados </em></strong></center><br><br>
+
+   <center><p> <a href="https://www.elsevier.es/es-revista-revista-medica-clinica-las-condes-202-articulo-nikola-tesla-el-mas-grande-S0716864013701925"> El genio de la electricidad </a></p></center>
+   <br> <center><p> <a href="https://www.bbc.com/mundo/noticias-42669125">Predicciones de Tesla</a></p></center>
+<br> <center><p> <a href="https://www.impuremag.com/nikola-tesla-3-6-9-codigo-la-creacion/">La clave del Universo 3 6 9</a></p></center>
+</aside>
+    <section id="main-content">
+        <img src="https://img.paratic.com/dosya/2017/06/nikola-tesla-kimdir-hayati-buluslari-ve-sozleri-768x461.jpg" alt="Nikola Tesla" class="main-content__img--full-width">
+
+        <h2><em>¿Quien fué Nikola Tesla?</em></h2>
+        <p>El verdadero padre de la electricidad tal y como la conocemos hoy fue el ingeniero de origen serbio Nikola Tesla, un genio del siglo XIX y principios del XX que también sentó las bases para la creación de la radio, un invento que habitualmente se atribuye al italiano Marconi.</p>
+        <p>Las maravillas de Tesla van aún más allá.
+Este maestro de la mecánica, la electricidad, las matemáticas y el diseño nacido en 1856 en Smiljan (actual Croacia) llegó a registrar más de 700 patentes, muchas de las cuales son auténticos prodigios que han resultado determinantes para el progreso tecnológico</p>
+<br>
+        <h2><em>Curiosidades de su personalidad</em></h2>
+        <p><strong>Nació durante una tormenta eléctrica:</strong> Entre el 9 y 10 de octubre de julio de 1856 durante la medianoche, en Smiljan (Croacia) una tormenta feroz asoló la ciudad. En ese mismo momento, una mujer daba a luz. Cuenta la leyenda que la partera, al escuchar los relámpagos, vaticinó un mal presagio: “Este niño va a ser un hijo de la oscuridad”. A lo que la madre, vehemente respondió: “No, él será un hijo de la luz”. Así fue como Tesla vino al mundo.</p>
+       <p><strong>Obsesión por el número tres:</strong> El genio croata tenía algo parecido a un trastorno obsesivo-compulsivo (TOC) con el número tres. Sí. Se dice que necesitaba 18 servilletas (número divisible entre tres) para limpiar sus vasos y cubiertos, que se lavaba las manos tres veces seguidas e incluso rodeaba mosaicos, ladrillos y piedras sobre los que caminaba o edificios a los que tenía que entrar hasta un total de tres veces antes de hacerlo. Además, murió tres días antes de celebrar su 87 cumpleaños y pasó su última década alojado en el Hotel New Yorker, en concreto en la habitación 3327 (de nuevo divisible entre tres), en la planta 33.</p>
+<p><strong>Odio hacia las perlas y los objetos redondos:</strong> Tesla despreció las joyas, nunca tuvo ninguna, las veía como una carga más que un elemento de valor. No soportaba las perlas en concreto, hasta tal punto que se negaba a hablar con mujeres que las llevasen. Esta aversión se extendió hasta tal punto que empezó a odiar objetos redondos en general.</p>
+    <p><strong>Pánico a los gérmenes:</strong> Tenía hábitos de higiene excesiva, consecuencia probable de su dura convalecencia por cólera durante su adolescencia.</p>
+        <p><strong>Memoria fotográfica:</strong> Tesla era capaz de memorizar los libros y las imágenes para sus invenciones sin registrarlas de manera material. Visualizaba los inventos pieza a pieza en su cabeza y, al probarlos, solían funcionar a la primera.</p>
+<br>
+<h2><em>Aportaciones mas importantes para la ciencia y la sociedad.</em></h2>
+        <p><strong>Electromagnetismo:</strong> La gran obra de Tesla tuvo que ver con la conducción de la electricidad, la gestión de electricidad alterna y la transmisión inalámbrica de energía. Sus logros en la construcción de motores de corriente alterna, experimentos de alta tensión y mediciones de campo eléctrico fueron pioneros.</p>
+<p><strong>Motor de corriente alterna:</strong> El desarrollo del motor de corriente alterna, basado en la obtención de electricidad gracias a la rotación de unas bobinas por acción de una fuente de energía determinada (nuclear, eólica, hidráulica), permitió y sigue permitiendo que la electricidad llegue a nuestros hogares, a las industrias y a las calles. </p>
+        <p><strong>Radiación:</strong> Experimentó con los rayos X y rayos roentgen, pero perdió sus apuntes al respecto en un incendio en su laboratorio de 1895. Más adelante estudió las ondas radioeléctricas, llegó a diseñar aparatos para “escuchar” el espacio y afirmó haber percibido ondas de origen extraterrestre.</p>
+ <p><strong>Radiografías:</strong> Nikola Tesla fue la primera persona en tomar una radiografía. Además, gracias a la investigación en el campo del electromagnetismo, Tesla pudo avisar e informar de los peligros que tenía el uso de los rayos X en los humanos.</p>
+        <p><strong> La radio:</strong> La Corte Suprema de Estados Unidos terminó dando la patente de la radio a Tesla, pues Marconi había aprovechado no solo algunos de sus inventos, sino la propia idea, ya que Tesla ya había sido capaz de enviar información a distancia mucho tiempo antes.</p>
+        <p><strong>Energía inalámbrica:</strong> Nikola Tesla consiguió, gracias al uso de unas bombillas de fósforo, la transmisión de energía eléctrica entre dos puntos separados en el espacio (cercanos) sin la necesidad de un objeto físico que transmita la corriente.</p>
+       <br> 
+<h2><em>Premios y reconocimientos</em></h2>
+        <p><strong>Entre los principales premios y reconocimientos de Tesla destacan:</strong>
+<p>Tesla fue premiado con la medalla Edison, la máxima distinción otorgada por la IEEE (Institute of Electrical and Electronics Engineers).<br>
+La unidad utilizada en el Sistema Internacional para medir la inducción magnética se llama tesla en su memoria.<br>
+El cráter lunar Tesla lleva este nombre en su memoria.<br>
+El planeta menor Tesla también conmemora su nombre.<br>
+El Aeropuerto de Belgrado lleva el nombre Aeropuerto Belgrado Nikola Tesla.<br
+La empresa de fabricación de automóviles eléctricos, fundada por Elon Musk en 2003, lleva como nombre "Tesla Motors".<br>
+Una estatua en honor a Tesla fue desvelada en Nueva York en 2013.<br>
+Premio Tesla de divulgación. El premio de divulgación que entrega la mayor plataforma de divulgación científica en habla hispana lleva su nombre.
+
+ </section>
+</div>
+
+<footer id="footer">
+    <div class="footer__social footer__section">
+        <h2>Mis redes</h2>
+
+        <div class="social__networks">
+            <div class="social__network">
+                <span class="social__icon-container"><<i class="lni lni-thunder"></i></span>
+                <span class="social__icon-handler"> <a href="https://github.com/"> JK </a> </span>
+            </div>
+
+            
+            </div>
+        </div>
+
+    </div>
+    <div class="footer__contact-form footer__section">
+        <h2>Contacto</h2>
+        <div>
+            <form>
+                <label for="contactEmail"> Correo electronico:</label>
+                <input id="contactEmail" required type="email" placeholder="Ingresa tu correo electronico">
+
+                <label for="contactMessage"> Mensaje:</label>
+                <textarea id="contactMessage" required rows="4" cols="50"> </textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    
+</footer>
+</body>
+</html> 
+ 
